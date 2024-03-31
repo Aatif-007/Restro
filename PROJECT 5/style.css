@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    line-height: 1.4;
+    font-weight: 300;
+    
+}
+/* Navigation */
+nav{
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.08);
+    position: sticky;
+    top: 0;
+    margin-bottom: 32px;
+    background-color: white;
+    z-index: 50;
+}
+.hero{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center
+}
+.hero_content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  
+}
+.tag{
+    background: #149f39;
+    padding: 5px 10px;
+    color: white;
+    align-self: flex-start;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 9px;
+}
+.explore_btn{
+    align-self: flex-start;
+    padding: 10px;
+    border: none;
+    transition: 0.2sec ease-in-out;
+    background: #ffc066;
+    color: white;
+    font-size: 15px;
+}
+button:hover{
+    opacity: 0.8;
+    transition: 0.2sec ease-in-out;
+}
+.hero_content h1{
+    font-size: 65px;
+    line-height: 1.2em;
+    font-weight: 400;
+}
+
+/* Icons */
+
+.features{
+    margin-top: 100px;
+    display: flex;
+    gap: 1.2em;
+    justify-content: center;
+}
+.features:hover{
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.08);}
+.divider{
+    border: 1px solid #ccc;
+    margin: 20px;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px 0;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.menu .tag{
+ align-self: center;   
+}
+.grid{
+    gap: 10px;
+    display: grid;
+    grid-template-areas:
+     "I1 I1 I2 I3"
+     "I1 I1 I2 I7"
+      "I4 I5 I6 I7";
+}
+.grid-img{
+    border-radius: 10px;
+}
+.grid-img:hover{
+   transform: scale(1.05);
+   transition: 0.2s ease-in-out;
+}
+
+.item1{
+    grid-area: I1;
+}
+.item2{
+    grid-area: I2;
+}
+.item3{
+    grid-area: I3;
+}
+.item4{
+    grid-area: I4;
+}
+.item5{
+    grid-area: I5;
+}
+.item6{
+    grid-area: I6;
+}
+.item7{
+    grid-area: I7;
+}
+
+/* Footer section */
+.footer-root{
+background-color: #fff0bd;
+padding: 30px;
+display: flex;
+justify-content: space-between;
+}
+.one-content{
+    margin-bottom: 10px;
+    color: grey;
+}
+.second-content{
+    margin-bottom: 10px;
+    color: grey;
+}
+.third-content{
+    margin-bottom: 10px;
+    color: grey;
+}
+.one-content ul{
+    list-style: none;
+}
+.second-content ul{
+    list-style: none;
+}
